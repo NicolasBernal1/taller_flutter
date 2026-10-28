@@ -15,3 +15,16 @@
 4. ¿Qué ocurre si Firebase falla?
     * La nota se va a leer local sin problema y la sincronizacion falla por lo que al guardar queda solo local pero no hay interrupciones en el servicio
 
+# Comandos flutter
+
+# 1. Herramientas (una sola vez por máquina)
+npm install -g firebase-tools
+firebase login
+dart pub global activate flutterfire_cli
+
+# 2. Dependencias de Flutter
+flutter pub add firebase_core cloud_firestore
+
+# 3. Vincular la app con Firebase
+# Caso A: proyecto existente (taller2-3)
+flutterfire configure --project=taller2-3
